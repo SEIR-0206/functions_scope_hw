@@ -10,6 +10,9 @@
 
 // 1. 3. What are the implications of the ability of a function to return a value?
 
+// if the function returns a value instead of just logging a value, the value produced can be used 
+// can be used globally and not just locally to the function
+
 // 2. calculateCube
 function calculateCube(num) {
     console.log(Math.pow(num,3))
