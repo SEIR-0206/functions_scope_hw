@@ -46,18 +46,52 @@ function sumArray(arr) {
 
 
 // 6.1 checkPrime
+
+
+// I was a bit confused on the square root part of the prime function so I looked up a 
+// stack overflow thread on it and took inspiration there 
+// (https://stackoverflow.com/questions/40200089/check-number-prime-in-javascript)
 function checkPrime(num) {
-    // YOUR CODE HERE
+
+    if(num === 1) {
+        return false;
+    } else if (num === 2) {
+        return true;
+    } else {
+        for(let i = 2; i < Math.floor(Math.sqrt(num)) + 1; i++) {
+            if(num % i === 0) {
+                return false;
+            }
+
+        }
+    }
+    return true;
 }
+
+// console.log(checkPrime(11))
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    let numPrimes = 0;
+    let primes = [];
+    for(let i = 1; i < num; i++) {
+        if(checkPrime(i)) {
+            numPrimes++
+            primes.push(i);
+        }
+    }
+    console.log("Between 1 and " + num + " there are " + numPrimes + " prime numbers:");
+    for(let i = 0; i < primes.length; i++) {
+        console.log("- " + primes[i]);
+    }
 }
+
+printPrimes(21);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+        
 }
 
 // BONUS!
