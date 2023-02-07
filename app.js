@@ -12,11 +12,12 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    return Math.pow(num,3)
+    console.log(Math.pow(num,3))
 }
 
 // 3. isAVowel
 function isAVowel(letter) {
+    letter = letter.toLowerCase();
     if(letter == 'a' | letter == 'e' | letter == 'i' | letter == 'o' | letter == 'u') {
         return true;
     } else {
