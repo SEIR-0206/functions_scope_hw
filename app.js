@@ -87,12 +87,20 @@ function printPrimes(num) {
     }
 }
 
-printPrimes(21);
+// printPrimes(21);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-        
+    let longestWord = "";
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i].length > longestWord.length) {
+            longestWord = arr[i]
+        }
+    }
+    return longestWord
 }
+
+// console.log(printLongestWord(["blob","blip"]))
 
 // BONUS!
 
