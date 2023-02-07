@@ -27,8 +27,12 @@ function isAVowel(letter) {
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let myArray = []
+    myArray.push(word1.length)
+    myArray.push(word2.length)
+    return myArray
 }
+
 
 // 5. sumArray
 function sumArray(arr) {
