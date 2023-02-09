@@ -6,9 +6,10 @@
 // Functions can send to other functions, variables, etc. within the greater structure of one's code. Functions can store return values until they are needed.
 
 // 2. calculateCube
-function calculateCube(num) {
-    // YOUR CODE HERE
-}
+// function calculateCube(num) {
+//     return num * num * num;
+// }
+// console.log(calculateCube());
 
 // 3. isAVowel
 function isAVowel(letter) {
