@@ -44,8 +44,12 @@ function isAVowel(letter) {
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let wordLengthArr = [];
+    wordLengthArr.push(word1.length, word2.length);
+    return wordLengthArr;
 }
+
+// console.log(getTwoLengths("fantastic", "help"));
 
 // 5. sumArray
 function sumArray(arr) {
