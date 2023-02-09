@@ -14,9 +14,17 @@ function calculateCube(num) {
 // console.log(calculateCube(5));
 
 // 3. isAVowel
+
+const vowels = ['a', 'e', 'i', 'o', 'u']
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    for (i = 0; i < vowels.length; i++) {
+        if (letter.toLowerCase() === vowels[i]) {
+            return true;
+        }
+    }
+    return false;
 }
+// console.log(isAVowel("O"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
