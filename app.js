@@ -1,8 +1,9 @@
 // 1.1. What is the difference between a parameter and an argument?
-
+//In essence, parameters hold the place of the argument until the function is called. 
 // 1.2. Within a function, what is the difference between return and console.log?
-
+// The return completely ends the function, and does not automatically print anything to the terminal. All that Console.log does is write a message to the terminal.
 // 1. 3. What are the implications of the ability of a function to return a value?
+//You can store an equation or a system anywhere and call upon it at any time, it is a significant time saver.
 
 // 2. calculateCube
 function calculateCube(num) {
