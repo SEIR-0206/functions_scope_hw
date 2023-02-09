@@ -6,9 +6,12 @@
 //You can store an equation or a system anywhere and call upon it at any time, it is a significant time saver.
 
 // 2. calculateCube
+
 function calculateCube(num) {
-    // YOUR CODE HERE
+    number = num * num * num;
+    return number;
 }
+// console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(letter) {
