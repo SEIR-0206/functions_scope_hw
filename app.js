@@ -20,23 +20,25 @@ function calculateCube(num) {
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
-   
-    letter = letter.toLowerCase();
-
-        
+    letter = letter.toLowerCase();   
     if (letter === "a" || letter === "e" || letter ==="i" || letter ==="o" || letter ==="u"){
         return true}else{
         return false;
     }
     }
 
-console.log(isAVowel("A"));
+// console.log(isAVowel("A"));
 
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+   let word1Arr =  [word1.length, word2.length]; 
+    
+    return word1Arr;
 }
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
