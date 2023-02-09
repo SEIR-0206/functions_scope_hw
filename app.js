@@ -6,15 +6,41 @@
 // Functions can send to other functions, variables, etc. within the greater structure of one's code. Functions can store return values until they are needed.
 
 // 2. calculateCube
-// function calculateCube(num) {
-//     return num * num * num;
-// }
+function calculateCube(num) {
+    return num * num * num;
+}
 // console.log(calculateCube());
 
 // 3. isAVowel
+const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    if (letter === vowels[0]) {
+        return true;
+    } else if (letter === vowels[1]) {
+        return true;
+    } else if (letter === vowels[2]) {
+        return true;
+    } else if (letter === vowels[3]) {
+        return true;
+    } else if (letter === vowels[4]) {
+        return true;
+    } else if (letter === vowels[5]) {
+        return true;
+    } else if (letter === vowels[6]) {
+        return true;
+    } else if (letter === vowels[7]) {
+        return true;
+    } else if (letter === vowels[8]) {
+        return true;
+    } else if (letter === vowels[9]) {
+        return true;
+    } else {
+        return false;
+    }
 }
+
+// console.log(isAVowel("y"));
+
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
