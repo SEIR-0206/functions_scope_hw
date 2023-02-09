@@ -12,34 +12,60 @@ function calculateCube(num) {
 // console.log(calculateCube());
 
 // 3. isAVowel
-const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
 function isAVowel(letter) {
-    if (letter === vowels[0]) {
-        return true;
-    } else if (letter === vowels[1]) {
-        return true;
-    } else if (letter === vowels[2]) {
-        return true;
-    } else if (letter === vowels[3]) {
-        return true;
-    } else if (letter === vowels[4]) {
-        return true;
-    } else if (letter === vowels[5]) {
-        return true;
-    } else if (letter === vowels[6]) {
-        return true;
-    } else if (letter === vowels[7]) {
-        return true;
-    } else if (letter === vowels[8]) {
-        return true;
-    } else if (letter === vowels[9]) {
-        return true;
-    } else {
-        return false;
-    }
+    //     if (letter === vowels[0]) {
+    //         return true;
+    //     } else if (letter === vowels[1]) {
+    //         return true;
+    //     } else if (letter === vowels[2]) {
+    //         return true;
+    //     } else if (letter === vowels[3]) {
+    //         return true;
+    //     } else if (letter === vowels[4]) {
+    //         return true;
+    //     } else if (letter === vowels[5]) {
+    //         return true;
+    //     } else if (letter === vowels[6]) {
+    //         return true;
+    //     } else if (letter === vowels[7]) {
+    //         return true;
+    //     } else if (letter === vowels[8]) {
+    //         return true;
+    //     } else if (letter === vowels[9]) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
 }
 
-// console.log(isAVowel("y"));
+// console.log(isAVowel("O"));
+
+
+function isAVowel2(letter) {
+    const vowels = ["a", "e", "i", "o", "u"]
+    let lowercaseVowels = letter.toLowerCase();
+    for (let vowel of vowels) {
+        // console.log(vowel);
+        if (lowercaseVowels === vowel) {
+            return true;
+        }
+    }
+    return false;
+
+
+    // for (let idx = 0; idx < vowels.length; idx++) {
+    //     if (letter === vowels[idx]) {
+    //         break;
+    //         return true;
+    //     } else {
+    //         continue;
+    //     }
+    // }
+
+}
+// console.log(`${isAVowel2("w")}`);
+
+//Ohz helped Josh and I with this solution. The string of if/else statements are mine, as well as the commented out code in the function directly above. The commented in code above that is Ohz's. I am taking time to compare my answer with his to try and understand what wasn't working initially.
 
 
 // 4. getTwoLengths
@@ -64,13 +90,37 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num < 2) {
+        return false;
+    }
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+
+    // for (let i = 2; i < Math.ceil(Math.sqrt(num)); i++) {
+    // if (num % i === 0) {
+    //     return false;
+    // } else if (num % i !== 0) {
+    //     continue;
+    // } else {
+    //     return true;
+    // }
+    //     console.log(i);
+    // }
 }
+
+console.log(checkPrime(1));
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+
 }
+
+
 
 // 7. printLongestWord
 function printLongestWord(arr) {
