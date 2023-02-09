@@ -1,8 +1,9 @@
 // 1.1. What is the difference between a parameter and an argument?
-
+// A parameter is a variable, local to the function, that will be referenced in the code-block of a function, but they are just placeholders. Arguments are the real data that you supply when you call the function which will take the place of the parameter variables within the function when it runs and returns.
 // 1.2. Within a function, what is the difference between return and console.log?
-
+// A console.log is a stand-alone action that the function can commit within its code-block, while a return is the value that the function will output when it is called. The console.log will send an output directly to the console, while a return value will only do so if the function is called within an external console.log. Console.log only sends to the console, while return can be sent to another function as well.
 // 1. 3. What are the implications of the ability of a function to return a value?
+// Functions can send to other functions, variables, etc. within the greater structure of one's code. Functions can store return values until they are needed.
 
 // 2. calculateCube
 function calculateCube(num) {
