@@ -198,36 +198,55 @@ function eulerFibo(num) {
 // }
 // console.log(eulerFiboEvenNumbersToo(1111));
 
-function eulerFiboEvenNumbersSum(num) {
-    let sequence = [];
-    let sequenceEvens = [];
-    for (let i = 1; i <= num; i++) {
-        if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
-            break;
-        } else if (sequence.length < 2) {
-            if (i % 2 === 0) {
-                sequenceEvens.push(i);
-                sequence.push(i);
-            } else {
-                sequence.push(i);
-            }
-        } else if (sequence.length >= 2) {
-            if ((sequence[i - 2] + sequence[i - 3]) % 2 === 0) {
-                sequenceEvens.push(sequence[i - 2] + sequence[i - 3]);
-                sequence.push(sequence[i - 2] + sequence[i - 3]);
-            } else {
-                sequence.push(sequence[i - 2] + sequence[i - 3]);
-            }
-        }
-    }
-    let sum = 0;
-    for (let i = 0; i < sequenceEvens.length; i++) {
-        sum += sequenceEvens[i];
-    }
-    return sum;
-}
+// function eulerFiboSum(num) {
+//     let sequence = [];
+//     for (let i = 1; i <= num; i++) {
+//         if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+//             break;
+//         } else if (sequence.length < 2) {
+//             sequence.push(i);
+//         } else if (sequence.length >= 2) {
+//             sequence.push(sequence[i - 2] + sequence[i - 3]);
+//         }
+//     }
+//     let sum = 0;
+//     for (let i = 0; i < sequence.length; i++) {
+//         sum += sequence[i];
+//     }
+//     return sum;
+// }
+// console.log(eulerFiboSum(8));
 
-console.log(eulerFiboEvenNumbersSum(8));
+// function eulerFiboEvenNumbersSum(num) {
+//     let sequence = [];
+//     let sequenceEvens = [];
+//     for (let i = 1; i <= num; i++) {
+//         if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+//             break;
+//         } else if (sequence.length < 2) {
+//             if (i % 2 === 0) {
+//                 sequenceEvens.push(i);
+//                 sequence.push(i);
+//             } else {
+//                 sequence.push(i);
+//             }
+//         } else if (sequence.length >= 2) {
+//             if ((sequence[i - 2] + sequence[i - 3]) % 2 === 0) {
+//                 sequenceEvens.push(sequence[i - 2] + sequence[i - 3]);
+//                 sequence.push(sequence[i - 2] + sequence[i - 3]);
+//             } else {
+//                 sequence.push(sequence[i - 2] + sequence[i - 3]);
+//             }
+//         }
+//     }
+//     let sum = 0;
+//     for (let i = 0; i < sequenceEvens.length; i++) {
+//         sum += sequenceEvens[i];
+//     }
+//     return sum;
+// }
+
+// console.log(eulerFiboEvenNumbersSum(8));
 
 // 9. findNeedle
 function findNeedle(arr) {
