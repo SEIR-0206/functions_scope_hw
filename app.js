@@ -1,32 +1,52 @@
 // 1.1. What is the difference between a parameter and an argument?
+// Paraneters are the listed names in the definiton,
+// Arguments are the real values passed to the function
 
 // 1.2. Within a function, what is the difference between return and console.log?
+// Return returns the values from a function
+// Console.log is the equivalent of printing your function
 
 // 1. 3. What are the implications of the ability of a function to return a value?
+// You can put together a reusable took that can help developers break problems into tiny parts
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    return num * num * num
 }
+console.log(calculateCube(4))
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    const vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+
+    for (let i = 0; i < vowels.length; i++){
+        if(letter === vowels[i]) {
+            return true;
+        }
+    }
+    if(letter !== vowel) {
+        return false;
+    }
 }
+console.log(isAVowel("E"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    return(word1.length, word2.length);
 }
+console.log(getTwoLengths("Hippo", "Champions"));
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let total = 0
+    for  (i = 0; i < arr.length; i++) {
+        total += arr[i]
+    }
 }
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    for (let i =)
 }
 
 // 6.2 printPrimes
