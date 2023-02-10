@@ -158,20 +158,47 @@ function printLongestWord(arr) {
 
 
 function eulerFibo(num) {
-    let sequence = [];
-    for (let i = 1; i <= num; i++) {
-        if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
-            break;
-        } else if (sequence.length < 2) {
-            sequence.push(i);
-        } else if (sequence.length >= 2) {
-            sequence.push(sequence[i - 2] + sequence[i - 3]);
-        }
-    }
-    return sequence;
+    // let sequence = [];
+    // for (let i = 1; i <= num; i++) {
+    //     if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+    //         break;
+    //     } else if (sequence.length < 2) {
+    //         sequence.push(i);
+    //     } else if (sequence.length >= 2) {
+    //         sequence.push(sequence[i - 2] + sequence[i - 3]);
+    //     }
+    // }
+    // return sequence;
 }
+// console.log(eulerFibo(1111));
 
-console.log(eulerFibo(2));
+// function eulerFiboEvenNumbersToo(num) {
+//     let sequence = [];
+//     let sequenceEvens = [];
+//     for (let i = 1; i <= num; i++) {
+//         if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+//             break;
+//         } else if (sequence.length < 2) {
+//             if (i % 2 === 0) {
+//                 sequenceEvens.push(i);
+//                 sequence.push(i);
+//             } else {
+//                 sequence.push(i);
+//             }
+//         } else if (sequence.length >= 2) {
+//             if ((sequence[i - 2] + sequence[i - 3]) % 2 === 0) {
+//                 sequenceEvens.push(sequence[i - 2] + sequence[i - 3]);
+//                 sequence.push(sequence[i - 2] + sequence[i - 3]);
+//             } else {
+//                 sequence.push(sequence[i - 2] + sequence[i - 3]);
+//             }
+//         }
+//     }
+//     return `All: ${sequence} / Evens: ${sequenceEvens}`;
+// }
+// console.log(eulerFiboEvenNumbersToo(1111));
+
+
 
 // 9. findNeedle
 function findNeedle(arr) {
