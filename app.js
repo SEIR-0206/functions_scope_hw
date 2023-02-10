@@ -60,9 +60,6 @@ function checkPrime(num) {
 
 
 // 6.2 printPrimes
-// Write another function called `printPrimes` that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with `printPrimes(97)`, it will print all the Prime numbers up to and including 97.
-// This function can **call on** the previous `checkPrime` function.
-// </details>
 function printPrimes(num) {
     for (j = 0; j <= num; j++) {
         let isItPrime = checkPrime(j);
@@ -74,9 +71,19 @@ function printPrimes(num) {
 // printPrimes(30);
 
 // 7. printLongestWord
+
+
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let longWord = "";
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].length > longWord.length) {
+            longWord = arr[i];
+        } 
+    }
+    return longWord;
 }
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "peanutbutter"]));
+
 
 // BONUS!
 
