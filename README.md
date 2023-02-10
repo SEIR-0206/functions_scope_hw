@@ -38,7 +38,7 @@ The commit message should read: <br>
 Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
 
 ```javascript
-console.log(calculateCube(5));
+//console.log(calculateCube(5));
 ```
 
 > => 125

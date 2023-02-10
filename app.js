@@ -10,15 +10,24 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    return Math.pow(num,3);
+    return Math.pow(num, 3);
 }
 
-console.log(calculateCube(5));
+//console.log(calculateCube(5));
+//prompt 2 complete
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    let upper = letter.toUpperCase();
+    if(letter === "a" || letter === "e" || letter === "u" || letter === "i" ||letter === "o") {
+    
+        return true;
+    } else {
+        return false;
+    }
 }
+
+console.log(isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
