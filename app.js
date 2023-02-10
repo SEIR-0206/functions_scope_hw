@@ -13,7 +13,7 @@ function calculateCube(num) {
     return Math.pow(num, 3);
 }
 
-//console.log("prompt two "calculateCube(5));
+//console.log("prompt two " + calculateCube(5));
 //prompt 2 complete
 
 // 3. isAVowel
@@ -27,7 +27,7 @@ function isAVowel(letter) {
     }
 }
 
-console.log(isAVowel("a"));
+console.log("prompt 3: " + isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
