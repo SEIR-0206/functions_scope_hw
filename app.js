@@ -9,7 +9,8 @@
 function calculateCube(num) {
     return num * num * num;
 }
-// console.log(calculateCube());
+// console.log(calculateCube(2));
+
 
 // 3. isAVowel
 function isAVowel(letter) {
@@ -113,7 +114,7 @@ function checkPrime(num) {
     // }
 }
 
-// console.log(checkPrime(1));
+// console.log(checkPrime(5));
 
 // 6.2 printPrimes
 function printPrimes(num) {
