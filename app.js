@@ -13,7 +13,7 @@ function calculateCube(num) {
     return Math.pow(num, 3);
 }
 
-//console.log(calculateCube(5));
+//console.log("prompt two "calculateCube(5));
 //prompt 2 complete
 
 // 3. isAVowel
