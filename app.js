@@ -155,9 +155,23 @@ function printLongestWord(arr) {
 // BONUS!
 
 // 8. eulerFibo
+
+
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    let sequence = [];
+    for (let i = 1; i <= num; i++) {
+        if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+            break;
+        } else if (sequence.length < 2) {
+            sequence.push(i);
+        } else if (sequence.length >= 2) {
+            sequence.push(sequence[i - 2] + sequence[i - 3]);
+        }
+    }
+    return sequence;
 }
+
+console.log(eulerFibo(2));
 
 // 9. findNeedle
 function findNeedle(arr) {
