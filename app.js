@@ -160,17 +160,19 @@ function printLongestWord(arr) {
 function eulerFibo(num) {
     // let sequence = [];
     // for (let i = 1; i <= num; i++) {
-    //     if (sequence[i - 3] + sequence[i - 4] === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
+    //     if ((sequence[i - 3] + sequence[i - 4]) === num || (num - (sequence[i - 2] + sequence[i - 3]) < 0)) {
     //         break;
     //     } else if (sequence.length < 2) {
+    //         console.log(i);
     //         sequence.push(i);
     //     } else if (sequence.length >= 2) {
+    //         console.log(i);
     //         sequence.push(sequence[i - 2] + sequence[i - 3]);
     //     }
     // }
     // return sequence;
 }
-// console.log(eulerFibo(1111));
+// console.log(eulerFibo(14));
 
 // function eulerFiboEvenNumbersToo(num) {
 //     let sequence = [];
@@ -241,12 +243,16 @@ function eulerFibo(num) {
 //     }
 //     let sum = 0;
 //     for (let i = 0; i < sequenceEvens.length; i++) {
-//         sum += sequenceEvens[i];
+//         if (sequenceEvens[i] < 4000000) {
+//             sum += sequenceEvens[i];
+//         } else {
+//             break;
+//         }
 //     }
 //     return sum;
 // }
 
-// console.log(eulerFiboEvenNumbersSum(8));
+// console.log(eulerFiboEvenNumbersSum(5000000));
 
 // 9. findNeedle
 function findNeedle(arr) {
