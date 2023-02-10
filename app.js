@@ -126,12 +126,31 @@ function printPrimes(num) {
     return primes;
 }
 
-console.log(printPrimes(97));
+// console.log(printPrimes(97));
 
 // 7. printLongestWord
-function printLongestWord(arr) {
-    // YOUR CODE HERE
+
+function indexLongestWord(arr) {
+    let wordsLength = [];
+    for (let i = 0; i < arr.length; i++) {
+        wordsLength.push(arr[i].length);
+    }
+    return wordsLength.sort(function (a, b) { return b - a });
 }
+function printLongestWord(arr) {
+    let wordsLength = indexLongestWord(arr);
+    let longestWords = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length === wordsLength[0]) {
+            longestWords.push(arr[i]);
+        }
+    }
+
+    let inCaseOfTie = longestWords.join(' ');
+    return inCaseOfTie;
+}
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
