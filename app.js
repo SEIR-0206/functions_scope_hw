@@ -46,18 +46,35 @@ function sumArray(arr) {
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    for (let i =)
+    for (let i = 2;  i <= Math.floor (Math.sqrt(num)); i++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (let i = 2; i <= num; i++) {
+        if (printPrimes(i)) {
+            console.log(i);
+        }
+    }
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let longestWord = arr[0];
+    for (let i = 1; i < words.length; i++) {
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+    return longestWord;
 }
+
+console.log(printLongestWord);
 
 // BONUS!
 
@@ -68,7 +85,11 @@ function eulerFibo(num) {
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 'needle') {
+            return 'found the needle at ${i}';
+        }
+    }
 }
 
 // 10. sumPositive
