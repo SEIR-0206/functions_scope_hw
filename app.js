@@ -49,22 +49,29 @@ function sumArray(arr) {
 
 function checkPrime(num) {
     
-    for (i =2; i <= Math.sqrt(num); i++) {
+    for (i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) {
-            console.log(`${num} is not a prime number!`)
-            return
+            return false; 
         }
      }
-     console.log(`${num} is a prime number!`)
-     return
+     return true; 
  }
-//  console.log(checkPrime(93));
+// console.log(checkPrime(7));
 
 
 // 6.2 printPrimes
+// Write another function called `printPrimes` that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with `printPrimes(97)`, it will print all the Prime numbers up to and including 97.
+// This function can **call on** the previous `checkPrime` function.
+// </details>
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (j = 0; j <= num; j++) {
+        let isItPrime = checkPrime(j);
+        if (isItPrime === true) {
+            console.log(j);
+        }
+    }
 }
+// printPrimes(30);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
