@@ -46,9 +46,20 @@ function sumArray(arr) {
 // console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
+
 function checkPrime(num) {
-    // YOUR CODE HERE
-}
+    
+    for (i =2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            console.log(`${num} is not a prime number!`)
+            return
+        }
+     }
+     console.log(`${num} is a prime number!`)
+     return
+ }
+//  console.log(checkPrime(93));
+
 
 // 6.2 printPrimes
 function printPrimes(num) {
