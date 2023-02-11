@@ -13,21 +13,21 @@ function calculateCube(num) {
     return Math.pow(num, 3);
 }
 
-//console.log("prompt two " + calculateCube(5));
+console.log("Prompt 2: " + calculateCube(5));
 //prompt 2 complete
 
 // 3. isAVowel
 function isAVowel(letter) {
     let upper = letter.toUpperCase();
-    if(letter === "a" || letter === "e" || letter === "u" || letter === "i" ||letter === "o") {
-    
+    if (letter === "a" || letter === "e" || letter === "u" || letter === "i" || letter === "o") {
+
         return true;
     } else {
         return false;
     }
 }
 
-console.log("prompt 3: " + isAVowel("a"));
+console.log("Prompt 3: " + isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
@@ -39,10 +39,28 @@ function sumArray(arr) {
     // YOUR CODE HERE
 }
 
-// 6.1 checkPrime
+//6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    if (num === 2) {
+        return true;
+    } else if (num === 1) {
+        return false;
+    } else {
+        for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+            if (num % i === 0) {
+                console.log(`${num} Is Not prime`);
+                return false;
+            }
+
+        }
+
+    }
+    console.log(`${num} Is Prime`);
+    return true;
+
 }
+
+console.log(checkPrime(75));
 
 // 6.2 printPrimes
 function printPrimes(num) {
