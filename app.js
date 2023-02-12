@@ -43,38 +43,42 @@ function getTwoLengths(word1, word2) {
 }
 
 getTwoLengths("Box", "Carrot");
+
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
 }
+
+console.log(`prompt 5: ${sumArray([5, 2, 6, 8, 9])}`);
+
 
 //6.1 checkPrime
+
+
 function checkPrime(num) {
-    if (num === 2) {
-        return true;
-    } else if (num === 1) {
-        return false;
-    } else {
-        for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
-            if (num % i === 0) {
-                console.log(`Prompt 6.1: ${num} Is Not prime`);
-                return false;
-            }
-
-        }
-
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
     }
-    console.log(`Prompt 6.1: ${num} Is Prime`);
     return true;
-
 }
 
-checkPrime(256);
-
+// checkPrime(10)
 // 6.2 printPrimes
-function printPrimes(num) {
-    // YOUR CODE HERE
+function printPrimes(n) {
+    for (let i = 2; i <= n; i++) {
+        if (checkPrime(i)) {
+            console.log(`Prompt 6: ${i} is prime`);
+        }
+    }
 }
+
+printPrimes(100);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
