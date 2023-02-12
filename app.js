@@ -15,16 +15,18 @@ function calculateCube(num) {
 
 function isAVowel(letter) {
     if(letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u"){
-        console.log(`Yep you were right ${letter} is a vowel`);
-    }
+        console.log('true');
+    }else false;
 }
-isAVowel("a");
+// isAVowel("e");
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    console.log(`The length of word 1 is ${word1.length} and the length of word 2 is ${word2.length}!`);
+    return [word1.length, word2.length];
 }
-getTwoLengths(happy, california);
+    console.log(getTwoLengths("howdy", "waiter")); //should output [5, 6]
+
+getTwoLengths;
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
