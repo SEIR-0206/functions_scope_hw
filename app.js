@@ -49,7 +49,7 @@ function sumArray(arr) {
 
 function checkPrime(num) {
     
-    for (i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i === 0) {
             return false; 
         }
@@ -61,10 +61,10 @@ function checkPrime(num) {
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    for (j = 0; j <= num; j++) {
-        let isItPrime = checkPrime(j);
+    for (let i = 0; i <= num; i++) {
+        let isItPrime = checkPrime(i);
         if (isItPrime === true) {
-            console.log(j);
+            console.log(i);
         }
     }
 }
@@ -82,15 +82,36 @@ function printLongestWord(arr) {
     }
     return longWord;
 }
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "peanutbutter"]));
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "peanutbutter"]));
 
 
 // BONUS!
 
 // 8. eulerFibo
-function eulerFibo(num) {
-    // YOUR CODE HERE
+let fibonacciArray = [];
+function eulerFibo(firstNum, secondNum, endNum) { //I added a second and third parameter so it's more dynamic.
+    let placeholder = 0;
+
+    for (let i = 0; i < endNum; i++) {
+        placeholder = firstNum + secondNum; //placeholder adds nums together.
+        firstNum = secondNum; // firstnum is replaced bu secondnum
+        secondNum = placeholder; //secondnum is replaced by the placeholder's value, which is the sum of first and second num
+            if (placeholder > endNum) {
+                break;
+            } else if (firstNum % 2 === 0) {
+                fibonacciArray.push(firstNum);
+        }
+    }
+    let sumArray = 0;
+    for (let i = 0; i < fibonacciArray.length; i++) {
+        sumArray += fibonacciArray[i];
+    }
+    if (placeholder < 4000000){
+        console.log(sumArray);
+    }
 }
+// eulerFibo(1, 4, 500);
+
 
 // 9. findNeedle
 function findNeedle(arr) {
