@@ -82,19 +82,19 @@ printPrimes(5);
 
 // 7. printLongestWord
 function printLongestWord(array) {
-    // YOUR CODE HERE
-    let max = array[0];
-
+    let longestWord = "";
 
     for (i = 0; i < array.length; i++) {
-        if (array[i] > max)
-            max = array[i];
-    }
+        if (array[i].length > longestWord.length) {
+            longestWord = array[i];
+        }
 
-    return max;
+    }
+    return longestWord;
 }
 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+
+console.log(`Prompt 7: ${printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"])}`);
 
 // BONUS!
 
