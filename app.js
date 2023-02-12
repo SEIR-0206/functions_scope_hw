@@ -32,8 +32,17 @@ console.log("Prompt 3: " + isAVowel("a"));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
+    word1 = word1.length;
+
+    word2 = word2.length;
+
+
+    console.log(`Prompt 4: [${word1}, ${word2}]`);
+
+
 }
 
+getTwoLengths("Box", "Carrot");
 // 5. sumArray
 function sumArray(arr) {
     // YOUR CODE HERE
@@ -48,19 +57,19 @@ function checkPrime(num) {
     } else {
         for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
             if (num % i === 0) {
-                console.log(`${num} Is Not prime`);
+                console.log(`Prompt 6.1: ${num} Is Not prime`);
                 return false;
             }
 
         }
 
     }
-    console.log(`${num} Is Prime`);
+    console.log(`Prompt 6.1: ${num} Is Prime`);
     return true;
 
 }
 
-console.log(checkPrime(75));
+checkPrime(256);
 
 // 6.2 printPrimes
 function printPrimes(num) {
