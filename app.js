@@ -6,10 +6,13 @@
 // It implies that the function's conditions were met, the function has completed it's calling, the code worked.
 
 // 2. calculateCube
-function calculateCube(num) {
-    // YOUR CODE HERE
-}
 
+function calculateCube(num) {
+     
+   // return(length * height * width)
+    console.log(num * num * num)
+}
+calculateCube(5);
 // 3. isAVowel
 function isAVowel(letter) {
     // YOUR CODE HERE
