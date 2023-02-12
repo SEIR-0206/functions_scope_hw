@@ -70,11 +70,9 @@ function printPrimes(num){
     // YOUR CODE HERE
    let primes = [];
     for (let i = 0; i <= num; i++) {
-        
         if (checkPrime(i) === true){
             primes.push(i);
-        }
-        
+        } 
     }
     return primes;
 }
@@ -100,15 +98,38 @@ function printLongestWord(arr) {
     // }) 
     // return longestName[0];
 }
-console.log(printLongestWord(longWord));
+// console.log(printLongestWord(longWord));
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
+    let fiboArr = []
+    for (let i = 2; i <= num; i++) {
+       if(fiboArr.length === 0) fiboArr.push(1,2);
+       else if(fiboArr.length > 0 && fiboArr[fiboArr.length -1] < num && fiboArr[fiboArr.length -1] + fiboArr[fiboArr.length - 2] <= num){
+        fiboArr.push(fiboArr[fiboArr.length -1] + fiboArr[fiboArr.length - 2])
+       } 
+    }
+    let evenNums = []
+    for (let i = 0; i < fiboArr.length; i++) {
+        if (fiboArr[i] % 2 === 0){
+             evenNums.push(fiboArr[i])
+        }
+    }
 
+    let addNums = fiboArr.reduce((a, b) => a + b, 1)
+    
+    console.log(num)
+    console.log(fiboArr.length);
+    console.log(fiboArr)
+    console.log(evenNums);
+    return addNums;
 }
+
+console.log(eulerFibo(11))
+
 
 // 9. findNeedle
 function findNeedle(arr) {
