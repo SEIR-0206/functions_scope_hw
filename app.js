@@ -10,12 +10,17 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    console.log(Math.pow(num,4));
 }
 
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
+    letter = letter.toLowerCase();
+    if(letter == 'a' | letter == 'e' | letter == 'i' | letter == 'o' | letter == 'u') {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 // 4. getTwoLengths
