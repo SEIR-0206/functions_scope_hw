@@ -114,14 +114,28 @@ function eulerFibo(firstNum, secondNum, endNum) { //I added a second and third p
 
 
 // 9. findNeedle
+junkArray = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'];
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === 'needle') {
+            return console.log(`Found the needle at position ${i+1}`)
+        }
+    }
 }
+// findNeedle(junkArray);
 
 // 10. sumPositive
+anArray = [1, -4, 5, 2];
 function sumPositive(arr) {
-    // YOUR CODE HERE
+    let thisNum = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            thisNum += arr[i]
+        }
+    }
+    console.log(thisNum)
 }
+// sumPositive(anArray)
 
 module.exports = {
     calculateCube,
