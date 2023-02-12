@@ -55,32 +55,59 @@ function sumArray(arr) {
 // 6.1 checkPrime
 function checkPrime(num) {
     // YOUR CODE HERE
-    for (let i = 2; i <= Math.sqrt(num); i++) {
+    for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
        if( num % i === 0){
         return false
-       }
-      
+       }  
     }
-    return true;
+    return true
 }
 
-console.log(checkPrime(21));
+// console.log(checkPrime(23));
 
 // 6.2 printPrimes
-function printPrimes(num) {
+function printPrimes(num){
     // YOUR CODE HERE
+   let primes = [];
+    for (let i = 0; i <= num; i++) {
+        
+        if (checkPrime(i) === true){
+            primes.push(i);
+        }
+        
+    }
+    return primes;
 }
+// console.log (checkPrime(9));
+
+let longWord = ["BoJack", "Princess", "Diane","Peanutbutter", "a", "Max", "big", "blob"];
 
 // 7. printLongestWord
 function printLongestWord(arr) {
     // YOUR CODE HERE
+
+   let longestName = "";
+   for (let i = 0; i < arr.length; i++) {
+    let wordLength = arr[i].length;
+    if (wordLength > longestName.length) longestName = arr[i];
+   } return longestName;
+
+    // \/ Second way that worked \/
+
+    //   longestName = arr.sort((a,b) => {
+    //   if (a.length > b.length) return -1;
+    //   return 1
+    // }) 
+    // return longestName[0];
 }
+console.log(printLongestWord(longWord));
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
     // YOUR CODE HERE
+
 }
 
 // 9. findNeedle
@@ -99,9 +126,9 @@ module.exports = {
     getTwoLengths,
     sumArray,
     checkPrime,
-    printPrimes,
+    // printPrimes,
     printLongestWord,
     eulerFibo,
     findNeedle,
     sumPositive
-};
+}
