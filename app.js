@@ -15,7 +15,7 @@ console.log(calculateCube(5));
 // 3. isAVowel
 function isAVowel(name) {
   name = name.toLowerCase();
-  if (name == "i" || name == "e" || name == "a" || name == "o" || name =="u") {
+  if (name == "i" || name == "e" || name == "a" || name == "o" || name == "u") {
     return true;
   } else {
     return false;
@@ -26,8 +26,7 @@ console.log(isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    return [word1.length, word2.length]
-
+  return [word1.length, word2.length];
 
   // YOUR CODE HERE
 }
@@ -35,8 +34,14 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
+    let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]
+  }
+  return sum
   // YOUR CODE HERE
 }
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
