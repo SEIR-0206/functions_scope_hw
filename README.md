@@ -12,9 +12,10 @@ Topics: Problem solving with functions<br>
 
 ## Instructions
 
-Since this is just practice feel free to just clone this as you won't need to fork and clone or make a pull request.
-1. Write your answers in `app.js`.
-2. Follow the instructions below. 
+1. Fork this repo.
+2. Write your answers in `app.js`.
+3. Follow the instructions below. 
+4. Once completed, send the repository link to the *homework* thread.
 
 **Hint:** Remember your git skills for the commit history! 
 
