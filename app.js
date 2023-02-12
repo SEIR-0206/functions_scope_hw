@@ -14,15 +14,15 @@ console.log(calculateCube(5));
 
 // 3. isAVowel
 function isAVowel(name) {
-  //name = name.toLowerCase();
-  //if (name == "i" || name == "e" || name == "a" || name == "o" || name =="u") {
-   // return true;
-  //} else {
-   // return false;
-  //}
+  name = name.toLowerCase();
+  if (name == "i" || name == "e" || name == "a" || name == "o" || name =="u") {
+    return true;
+  } else {
+    return false;
+  }
   // YOUR CODE HERE
 }
-//console.log(isAVowel("a"));
+console.log(isAVowel("a"));
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
