@@ -87,12 +87,19 @@ printPrimes(10);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    let listOfWords = [];
-    listOfWords = arr.split(" ");
-    for(i = 0; i < listOfWords.length; i++){ //read through array index 0, count the words .lenght & compare to previous lenght. If the length is larger, compare with next index, if lenght is smaller, print the largest word.
-        if(listOfWords)
-    }
+    // let listOfWords = arr.split(" "); //Splits words into array
+    let longestWord = listOfWords[0];
+    
+    for(let i = 1; i < listOfWords.length; i++){ //read through array index 0, count the words .lenght & compare to previous lenght. If the length is larger, compare with next index, if lenght is smaller, print the largest word.
+        if(arr[i].length > longestWord.length){
+            longestWord = arr[i];
+        }
+
+    } return longestWord;
+
 }
+// console.log(printLongestWord(["Ali wants to eat a cake"]));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
