@@ -19,7 +19,7 @@ console.log(calculateCube(3));
 // 3. isAVowel
 function isAVowel(letter){
     // letter = letter.toLowerCase();
-    vowels = ["a", "e", "i", "o", "u"];
+    const vowels = ["a", "e", "i", "o", "u"];
     return vowels.includes(letter.toLowerCase());
     
 }
@@ -39,10 +39,15 @@ console.log(getTwoLengths("one hundred", "five")); //prints out [11, 4]
 
 // 5. sumArray
 function sumArray(arr) {
-    let sum = arr[0] + arr[1];
-    console.log(arr);
+    let total = 0;
+    for(i = 0; i < arr.length; i++){
+        total += arr[i];
+    }
+    return total;
+    // let sum = arr[0] + arr[1];
+    // console.log(arr);
 }
-sumArray(6,4) //Didn't finish it yet. 
+console.log(sumArray([6,4,2,1]); //Didn't finish it yet. 
 // 6.1 checkPrime
 function checkPrime(num) {
     if (num <= 1) {
