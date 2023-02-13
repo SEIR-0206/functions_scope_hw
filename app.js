@@ -32,7 +32,7 @@ function getTwoLengths(word1, word2) {
     // return each parameters' character length
     getTwoLengths = (word1, word2);
     return word1.length, word2.length;
-}
+}   //word1 not printing
 console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
@@ -49,21 +49,49 @@ function sumArray(arr) {
   
     }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
-
+// should be sum 21
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
-}
+    // checks if a number is prime;
+  if (num <= 1) return false;
+  if (num % 2 == 0 && num > 2) return false;
+  const s = Math.sqrt(num);
+  for(let i = 3; i <= s; i += 2) {
+    if(num % i === 0) return false;
+  }
+  return true;
+  // mix of 2/10/23 notes and an equation online that makes sense and works, but the decision to select these specific lines seems arbitrary.
+    
+}  
+console.log(checkPrime(11)); 
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    // console log prime numbers up to a limit.
+    {
+        let store  = [], i, j, primes = []; // i versus j back and forth
+        for (i = 2; i <= max; ++i) 
+        {
+            if (!store [i]) 
+              {
+                primes.push(i);
+                for (j = i << 1; j <= max; j += i) 
+                {
+                    store[j] = true;
+                }
+            }
+        }
+        return primes;
+    } 
+    console.log(printPrimes(15));
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    // 
 }
+
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
 
 // BONUS!
 
