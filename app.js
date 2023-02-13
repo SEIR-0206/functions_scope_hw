@@ -25,17 +25,24 @@ function isAVowel(letter) {
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    let myArray = []
+    myArray.push(word1.length)
+    myArray.push(word2.length)
+    return myArray
 }
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++) {
+        sum + arr[i];
+    }
+    return sum;
 }
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    //
 }
 
 // 6.2 printPrimes
@@ -45,7 +52,13 @@ function printPrimes(num) {
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    let longest = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (longest.length < arr[i].length) {
+      longest = arr[i];
+    }
+  }
+  return longest;
 }
 
 // BONUS!
