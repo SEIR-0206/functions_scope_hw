@@ -10,54 +10,57 @@
 
 // 2. calculateCube
 function calculateCube(num) {
-    // YOUR CODE HERE
+    cubed = num * num * num;
+    return cubed;
 }
+// 3 ^ 3 = 27
+console.log(calculateCube(3));
 
 // 3. isAVowel
-function isAVowel(letter) {
-    // YOUR CODE HERE
+function isAVowel(letter){
+    
 }
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    
 }
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    
 }
 
 // 6.1 checkPrime
 function checkPrime(num) {
-    // YOUR CODE HERE
+    
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    
 }
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+    
 }
 
 // BONUS!
 
 // 8. eulerFibo
 function eulerFibo(num) {
-    // YOUR CODE HERE
+    
 }
 
 // 9. findNeedle
 function findNeedle(arr) {
-    // YOUR CODE HERE
+    
 }
 
 // 10. sumPositive
 function sumPositive(arr) {
-    // YOUR CODE HERE
+    
 }
 
 module.exports = {
