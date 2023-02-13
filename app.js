@@ -47,7 +47,7 @@ function sumArray(arr) {
     // let sum = arr[0] + arr[1];
     // console.log(arr);
 }
-console.log(sumArray([6,4,2,1]); //Didn't finish it yet. 
+console.log(sumArray([6,4,2,1])); //Didn't finish it yet. 
 // 6.1 checkPrime
 function checkPrime(num) {
     if (num <= 1) {
@@ -73,26 +73,28 @@ console.log("Is it Prime? " ,checkPrime(11)); //Needed to get ChatGPT aid. I get
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    // primes = [];
-    if(checkPrime(num) === true){
-        console.log("This is a Prime Number");
-    } else {
-        for(i = 1; i <= num; i++){
-            if(num % i === 0){
-                // console.log(primes.push(num)); //Print prime numbers into array primes
-                console.log(i); 
+    let primes = [];
+        for(let i = 1; i <= num; i++){
+            if(checkPrime(i) === true){
+                // console.log(i);
+                primes.push(i);
             }
-        }
-
     }
+    return primes;
 }
+console.log(printPrimes(10));
+
+// if(num % i === 0){
+//     // console.log(primes.push(num)); //Print prime numbers into array primes
+//     console.log(i); 
+// }
   
 
-printPrimes(10);
+// printPrimes(10);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    let words = arr.split(" ");
+    let words = arr.split(" "); //expects string value!
     let longest = "";
 
     for(let word of words){
@@ -103,7 +105,7 @@ function printLongestWord(arr) {
 
 }
 // console.log(printLongestWord(["Ali wants to eat a cake"]));
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
+console.log(printLongestWord("I like pizza"));
 
 // function printLongestWord(arr) {
 //     // let listOfWords = arr.split(" "); //Splits words into array
