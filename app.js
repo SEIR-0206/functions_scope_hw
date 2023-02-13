@@ -42,7 +42,7 @@ function sumArray(arr) {
     let sum = arr[0] + arr[1];
     console.log(arr);
 }
-sumArray(6,4)
+sumArray(6,4) //Didn't finish it yet. 
 // 6.1 checkPrime
 function checkPrime(num) {
     if (num <= 1) {
@@ -87,7 +87,11 @@ printPrimes(10);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    
+    let listOfWords = [];
+    listOfWords = arr.split(" ");
+    for(i = 0; i < listOfWords.length; i++){ //read through array index 0, count the words .lenght & compare to previous lenght. If the length is larger, compare with next index, if lenght is smaller, print the largest word.
+        if(listOfWords)
+    }
 }
 
 // BONUS!
