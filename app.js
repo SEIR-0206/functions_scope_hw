@@ -88,11 +88,13 @@ function printPrimes(num) {
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // 
-}
-
+    // print the longest word in an array
+    let string = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"];
+  } if (i = 0, i > string.length, i++) {
+    return string.length();
+  }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]));
-
+print(printLongestWord)
 // BONUS!
 
 // 8. eulerFibo
