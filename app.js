@@ -38,8 +38,17 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 // 5. sumArray
 function sumArray(arr) {
     // find the sum of an array
+    let sumArray = (arr.length = 0, arr.length >= 6, arr++);
+     return (arr)
+    //let sumArray = 0;
 
-}
+    // arr.forEach(item => {
+    //     sum += item;
+    // });
+
+  
+    }
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
