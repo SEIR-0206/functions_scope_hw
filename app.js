@@ -8,16 +8,24 @@
 // 2. calculateCube
 
 function calculateCube(num) {
-     
-   // return(length * height * width)
-    console.log(num * num * num)
+       // return(length * height * width)
+       return num * num * num;
+    //console.log (num * num * num)
 }
-calculateCube(5);
+const answer = calculateCube(5)
+console.log(calculateCube(5));
+
 // 3. isAVowel
 function isAVowel(letter) {
-    // YOUR CODE HERE
-}
-
+     //return true for (a, e, i, o, u)
+     if (letter = "a", "e", "i", "o", "u") {
+    return true; 
+     } else  {
+        return (false);
+    }
+}   
+//const answer = isAVowel("a", "e", "i", "o", "u")
+console.log(isAVowel("a"));
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     // YOUR CODE HERE
