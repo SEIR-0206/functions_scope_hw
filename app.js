@@ -34,24 +34,37 @@ console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
-    let sum = 0
+  let sum = 0;
   for (let i = 0; i < arr.length; i++) {
-    sum += arr[i]
+    sum += arr[i];
   }
-  return sum
+  return sum;
   // YOUR CODE HERE
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
 // 6.1 checkPrime
 function checkPrime(num) {
+  for (let i = 2; i <= Math.floor(Math.sqrt(num)); i++) {
+    if (num % i == 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
   // YOUR CODE HERE
 }
 
 // 6.2 printPrimes
 function printPrimes(num) {
   // YOUR CODE HERE
+  for (let i = 2 ; i <= num ; i++){
+    if(checkPrime(i)){
+        console.log(i)
+    }
+  }
 }
+printPrimes(97)
 
 // 7. printLongestWord
 function printLongestWord(arr) {
