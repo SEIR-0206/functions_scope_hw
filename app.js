@@ -58,18 +58,37 @@ function checkPrime(num) {
 // 6.2 printPrimes
 function printPrimes(num) {
   // YOUR CODE HERE
-  for (let i = 2 ; i <= num ; i++){
-    if(checkPrime(i)){
-        console.log(i)
+  for (let i = 2; i <= num; i++) {
+    if (checkPrime(i)) {
+      console.log(i);
     }
   }
 }
-printPrimes(97)
+printPrimes(97);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
+  let longest = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (longest.length < arr[i].length) {
+      longest = arr[i];
+    }
+  }
+  return longest;
   // YOUR CODE HERE
 }
+console.log(
+  printLongestWord([
+    "BoJack",
+    "Princess",
+    "Diane",
+    "a",
+    "Max",
+    "Peanutbutter",
+    "big",
+    "blob",
+  ])
+);
 
 // BONUS!
 
