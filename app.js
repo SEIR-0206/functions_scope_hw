@@ -26,14 +26,19 @@ function isAVowel(letter) {
 }   
 //const answer = isAVowel("a", "e", "i", "o", "u")
 console.log(isAVowel("a"));
+
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    // YOUR CODE HERE
+    // return each parameters' character length
+    getTwoLengths = (word1, word2);
+    return word1.length, word2.length;
 }
+console.log(getTwoLengths("Hank", "Hippopopalous"));
 
 // 5. sumArray
 function sumArray(arr) {
-    // YOUR CODE HERE
+    // find the sum of an array
+
 }
 
 // 6.1 checkPrime
