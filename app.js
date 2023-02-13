@@ -59,11 +59,17 @@ function printPrimes(num) {
 }
 printPrimes(24);
 
-// 7. printLongestWord
+// 7. printLongestWord had to use some additional outside resources to figure out how to write this. Kept throwing errors for me.
 function printLongestWord(arr) {
-
+let bigWord = arr[i];
+for(let i = 1; i < arr.length; i++){
+    if(arr[i].length > bigWord.length){
+        bigWord = arr[i];
+    }
 }
-
+// }
+// let arr = ["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"];
+// console.log(printLongestWord(arr));
 // BONUS!
 
 // 8. eulerFibo
