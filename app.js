@@ -40,17 +40,28 @@ function sumArray(arr){
 
 // 6.1 checkPrime
 function checkPrime(num) {
-   
+   for(let i = 2; i<= Math.sqrt(num); i++){
+    if(num % i === 0){
+        return false;
+    }
+   }
+   return true;
 }
-
+let answer = checkPrime(15);
+console.log(answer);
 // 6.2 printPrimes
 function printPrimes(num) {
-    // YOUR CODE HERE
+    for (let i = 2; i <= num; i++){
+        if(checkPrime(i)){
+            console.log(i);
+        }
+    }
 }
+printPrimes(24);
 
 // 7. printLongestWord
 function printLongestWord(arr) {
-    // YOUR CODE HERE
+
 }
 
 // BONUS!
