@@ -1,0 +1,573 @@
+➜  functions_scope_hw git:(main) ✗ git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 1 - Verbal questions"
+[main 64c1d67] Commit 1 - Verbal questions
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+➜  functions_scope_hw git:(main) ✗ git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 2 - Cube Calculation"
+[main fcc47ec] Commit 2 - Cube Calculation
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+➜  functions_scope_hw git:(main) git add . 
+➜  functions_scope_hw git:(main) ✗ git commitd -m "Commit 3 - Is a vowel"
+git: 'commitd' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+➜  functions_scope_hw git:(main) ✗ git add /
+fatal: /: '/' is outside repository at '/Users/david/sei/deliverables/functions_scope_hw'
+➜  functions_scope_hw git:(main) ✗ git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 3 - Is a vowel"
+[main 63e60fc] Commit 3 - Is a vowel
+ 1 file changed, 15 insertions(+), 7 deletions(-)
+➜  functions_scope_hw git:(main) git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 4 - Two Lenths"
+[main 6a2374a] Commit 4 - Two Lenths
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+➜  functions_scope_hw git:(main) git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 5 - Sum Array"
+[main c27b200] Commit 5 - Sum Array
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+➜  functions_scope_hw git:(main) ✗ git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 6 - Prime Numbers"
+[main ffbe8ac] Commit 6 - Prime Numbers
+ 1 file changed, 34 insertions(+), 6 deletions(-)
+➜  functions_scope_hw git:(main) git add .
+➜  functions_scope_hw git:(main) ✗ git commit -m "Commit 7 - Longest Word"
+[main ec7975e] Commit 7 - Longest Word
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+➜  functions_scope_hw git:(main) git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/davidxv15/functions_scope_hw.git'
+➜  functions_scope_hw git:(main) git push origin main
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 3.17 KiB | 28.00 KiB/s, done.
+Total 21 (delta 13), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (13/13), completed with 1 local object.
+To https://github.com/davidxv15/functions_scope_hw.git
+   db186d2..ec7975e  main -> main
+➜  functions_scope_hw git:(main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+➜  functions_scope_hw git:(main) history
+    1  ```bash\necho $SHELL\n```
+    2  git status
+    3  git add .
+    4  git commit -m "Solve addOne"
+    5  html-css-js 
+    6  html
+    7  .html
+    8  nodemon
+    9  node app.js
+   10  nodemon
+   11  node
+   12  ls
+   13  cd sei
+   14  ls
+   15  cd code-alongs
+   16  ls
+   17  cd ..
+   18  tree
+   19  ls
+   20  open index.html
+   21  ls
+   22  cd ..
+   23  rm  -rf .git
+   24  cd deliverables/Star_Wars
+   25  git status
+   26  git add.
+   27  git add .
+   28  git commit -m "finish my homework"
+   29  git push origin master
+   30  git remote -v
+   31  git remote remove origin
+   32  git remote add origin https://github.com/davidxv15/Star_Wars.git
+   33  git push
+   34  git push origin master
+   35  gh repo clone SEIR-0206/data_types_deliverable
+   36  index.html
+   37  ls
+   38  cd sei
+   39  ls
+   40  cd labs
+   41  index.html
+   42  ls
+   43  cd sei
+   44  ls
+   45  cd labs
+   46  ls
+   47  mkdir data_types_lab
+   48  ls
+   49  index.html
+   50  touch index.html main.js
+   51  ls
+   52  <script src='main.js' defer></script>
+   53  ls
+   54  git clone https://github.com/davidxv15/data_types_deliverable.git
+   55  cd 
+   56  cd labs
+   57  ls
+   58  cd sei
+   59  ls
+   60  cd labs
+   61  ls
+   62  cd data_types_deliverable
+   63  git remote -v
+   64  ls
+   65  code .
+   66  ls
+   67  cd act2.sh
+   68  ls
+   69  cd star_wars
+   70  ls
+   71  cd rebellion
+   72  ls
+   73  touch princess_leia.txt && echo "Help me, Obi-Wan…You’re my only hope." >>
+   74  touch princess_leia.txt && echo >"Help me, Obi-Wan…You’re my only hope." >>
+   75  touch princess_leia.txt && echo.>"Help me, Obi-Wan…You’re my only hope." >>
+   76  touch princess_leia.txt && echo.>"Help me, Obi-Wan…You’re my only hope.">>
+   77  ls
+   78  cd millenium_falcon
+   79  ls
+   80  mv ~/star_wars/rebellion/luke_skywalker.txt ~/star_wars/millenium_falcon
+   81  ls
+   82  mv ~/Star_Wars/star_wars/rebellion/luke_skywalker.txt ~/Star_Wars/star_wars/millenium_falcon
+   83  ls
+   84  mv ~/Star_Wars/star_wars/rebellion/luke_skywalker.txt ~/Star_Wars/star_wars/millenium_falcon/
+   85  ls
+   86  mv luke_skywalker.txt ~/Star_Wars/star_wars/millenium_falcon/
+   87  ls
+   88  cd rebellion
+   89  ls
+   90  cd rebellion
+   91  ls
+   92  mv luke_skywalker millenium_falcon
+   93  ls
+   94  mv ~/luke_skywalker.txt ~/millenium_falcon
+   95  ls
+   96  mv ~/luke_skywalker.txt ~/millenium_falcon
+   97  ls
+   98  mv ~/~/Star_Wars/star_wars/rebellion/luke_skywalker.txt ~/Star_Wars/star_wars/millenium_falcon/
+   99  ~/star_wars/rebellion/luke_skywalker.txt ~/Star_Wars/star_wars/millenium_falcon/
+  100  ls
+  101  cd millenium_falcon
+  102  ls
+  103  cd millenium_falcon
+  104  ls
+  105  cd rebellion
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd rebellion
+  110  ls
+  111  empire
+  112  ls
+  113  cd empire
+  114  ls
+  115  cd 
+  116  ls
+  117  sei
+  118  cd sei
+  119  ls
+  120  cd deliverables
+  121  ls
+  122  cd Star_Wars
+  123  ls
+  124  cd star_wars
+  125  ls
+  126  cd rebellion
+  127  ls
+  128  mv ~/millenium_falcon* ~/death_star
+  129  ls
+  130  cd empire
+  131  ls
+  132  cd death_star
+  133  ls
+  134  cd millenium_falcon
+  135  ls
+  136  mv ~/millenium_falcon* ~/death_star
+  137  ls
+  138  mv *~/millenium_falcon* ~/death_star
+  139  ls
+  140  mv *~/millenium_falcon ~/death_star
+  141  ls
+  142  mv *.txt ~/death_star
+  143  ls
+  144  mv ~/rebellion ~/death_star
+  145  ls
+  146  mv */rebellion ~/death_star
+  147  ls
+  148  mv *.txt ~/death_star
+  149  ls
+  150  mv */millenium_falcon ~/death_star
+  151  ls
+  152  mv ~/chewbacca ~/death_star
+  153  ls
+  154  mv millenium_falcon death_star
+  155  ls
+  156  mv millenium_falcon ~/sei/deliverables/Star_Wars/empire/death_star/millenium_falcon
+  157  ls
+  158  mv ~/Star_Wars/star_wars/rebellion/luke_skywalker.txt obi_wan.txt princess_leia.txt ~/Star_Wars/star_wars/millenium_falcon/
+  159  ls
+  160  mv ~/Star_Wars/star_wars/rebellion/luke_skywalker.txt obi_wan.txt princess_leia.txt ~/Star_Wars/star_wars/rebellion/death_star/
+  161  ls
+  162  mv ~/Star_Wars/star_wars/rebellion/luke_skywalker.txt obi_wan.txt princess_leia.txt ~/Star_Wars/star_wars/empire/death_star/
+  163  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon/luke_skywalker.txt obi_wan.txt princess_leia.txt ~/Star_Wars/star_wars/empire/death_star/
+  164  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon/luke_skywalker.txt obi_wan.txt princess_leia.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/
+  165  ls
+  166  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon/luke_skywalker.txt obi_wan.txt princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/
+  167  ls
+  168  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/luke_skywalker.txt obi_wan.txt princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  169  ls
+  170  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/luke_skywalker.txt obi_wan.txt princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  171  ls
+  172  v ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/obi_wan.txt princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  173  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/obi_wan.txt princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  174  ls
+  175  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/princess_leia.txt han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  176  ls
+  177  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/han_solo.txt chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  178  ls
+  179  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/chewbacca.txt ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon
+  180  ls
+  181  mv millenium_falcon rebellion
+  182  ls
+  183  .
+  184  ls
+  185  mv millenium_falcon rebellion
+  186  ls
+  187  cd rebellion
+  188  ls
+  189  cd death_star
+  190  ls
+  191  mv rebellion millenium_falcon
+  192  ls
+  193  cd millenium_falcon
+  194  ls
+  195  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/millenium_falcon ~/mv ~/sei/deliverables/Star_Wars/star_wars/rebellion
+  196  ls
+  197  cd ..
+  198  ls
+  199  git add
+  200  git add .
+  201  git commit -m "finish homework"
+  202  git push Star_Wars/star_wars/
+  203  git status
+  204  git add .
+  205  git commit -m "introduce empire threats 3"
+  206  git push Star_Wars/star_wars/
+  207  git status
+  208  ls
+  209  cd empire
+  210  ls
+  211  cd death_star
+  212  ls
+  213  mv death_star empire
+  214  ls
+  215  mv sei/deliverables/Star_Wars/star_wars/empire/death_star/emperor_palpatine.txt ~/sei/deliverables/Star_Wars/star_wars/empire
+  216  ls
+  217  mv sei/deliverables/Star_Wars/star_wars/empire/death_star/ ~/sei/deliverables/Star_Wars/star_wars/empire
+  218  ls
+  219  mv ~/sei/deliverables/Star_Wars/star_wars/empire/death_star/ ~/sei/deliverables/Star_Wars/star_wars/empire 
+  220  ls
+  221  history
+  222  cd ..
+  223  git push origin push
+  224  git staus
+  225  git status
+  226  git add .
+  227  git commit -m "Finished Star Wars Project"
+  228  git push Star_Wars/star_wars/
+  229  git status
+  230  git add .
+  231  git commit -m "Finished Star Wars"
+  232  git push Star_Wars/star_wars/
+  233  git status
+  234  git add .
+  235  git status
+  236  git add <path>
+  237  git status
+  238  git add
+  239  git add .
+  240  git commit -m "Star Wars Homework"
+  241  git push Star_Wars/star_wars
+  242  git status
+  243  git push https://github.com/SEIR-0206/Star_Wars-2.git
+  244  git status
+  245  git add .
+  246  git status
+  247  git add https://github.com/SEIR-0206/Star_Wars-2.git
+  248  git status
+  249  git add .
+  250  git add act3.sh
+  251  git add Star_Wars
+  252  ls
+  253  cd ..
+  254  git add .
+  255  git statys
+  256  git status
+  257  git push https://github.com/SEIR-0206/Star_Wars-2.git
+  258  git status
+  259  git add .
+  260  git commit -m "Star Wars Deliverable"
+  261  git push https://github.com/davidxv15/Star_Wars.git
+  262  html-css-js
+  263  html-css-js touch index.html style.css app.js
+  264  html-css-js
+  265  open index.html
+  266  ls
+  267  git add .
+  268  git commit -m "data_types 1-9"
+  269  git status
+  270  tree
+  271  ls
+  272  cd main.js
+  273  ls
+  274  git add .
+  275  git commit "Data_Types 1-11"
+  276  git add .
+  277  git commit -m "Data_Types 1-11"
+  278  git push origin main
+  279  history | tail -n 250
+  280  ls
+  281  sei
+  282  ls
+  283  cd labs
+  284  ls
+  285  index.html
+  286  ls
+  287  gh repo clone davidxv15/Control_Flow_Homework
+  288  ls
+  289  cd Control_Flow_Homework
+  290  ls
+  291  cd lib
+  292  ls
+  293  cd .
+  294  cd ..
+  295  ls
+  296  cd lib
+  297  ls
+  298  cd challenge.js
+  299  ls
+  300  open challenge.js
+  301  ls
+  302  cd sei
+  303  ls
+  304  cd labs
+  305  ls
+  306  cd Control_Flow_Homework
+  307  ls
+  308  cd lib
+  309  ls
+  310  open challenge.js
+  311  cd ..
+  312  cd..
+  313  cd ..
+  314  ls
+  315  cd david
+  316  ls
+  317  sei
+  318  ls
+  319  cd labs
+  320  ls
+  321  cd Control_Flow_Homework
+  322  ls
+  323  git add .
+  324  git commit -m "Complete prompt 1"
+  325  tree
+  326  git add .
+  327  git commit -m "Complete prompt 1"
+  328  git add .
+  329  git commit -m "Complete prompt 1"
+  330  nodemon
+  331  node functions
+  332  node.js
+  333  ls
+  334  node
+  335  node functions.js
+  336  node functions. js
+  337  node functions.js
+  338  touch index.html
+  339  open.index
+  340  open index
+  341  node
+  342  cd lib
+  343  ls
+  344  node challenge.js
+  345  cd ~
+  346  ls
+  347  node Control\ Flow\ Deliverable
+  348  node
+  349  node functions
+  350  node functions.js
+  351  git status
+  352  git add
+  353  node
+  354  node.app.js
+  355  node app
+  356  git status
+  357  ls
+  358  https://github.com/SEIR-0206/Control_Flow_Homework-1.git
+  359  gh repo clone SEIR-0206/Control_Flow_Homework-1
+  360  ls
+  361  cd Control_Flow_Homework-1
+  362  git add .
+  363  cd ..
+  364  git add.
+  365  git add .
+  366  cd ..
+  367  git add .
+  368  cd ..
+  369  ls
+  370  david
+  371  ls
+  372  cd sei
+  373  ls
+  374  cd labs
+  375  ls
+  376  cd Control_Flow_Homework-1
+  377  git status
+  378  git add
+  379  git add .
+  380  git commit -m "Complete prompt 1"
+  381  git add .
+  382  git commit -m "Complete prompt 2"
+  383  git add .
+  384  git commit -m "Complete prompt 3"
+  385  nodemon
+  386  git add .
+  387  git commit -m "Complete prompt 4"
+  388  git add .
+  389  git commit -m "Complete 5"
+  390  git add .
+  391  git commit -m "Complete prompt 6"
+  392  git add .
+  393  git commit -m "Complete prompt 7"
+  394  git add .
+  395  git commit -m "Complete prompt 8"
+  396  git status
+  397  ls
+  398  cd lib
+  399  ls
+  400  cd .
+  401  cd ..
+  402  git add .
+  403  git commit -m "Complete prompt 9"
+  404  git status
+  405  git add .
+  406  git status
+  407  ls
+  408  open Control_Flow_Homework-2
+  409  ls
+  410  cd Control_Flow_Homework-2
+  411  git status
+  412  git add .
+  413  git commit -m "Complete prompt 10"
+  414  git add ,
+  415  git .
+  416  git add.
+  417  git add .
+  418  git commit -m "Prompt 13 broken"
+  419  git push origin master
+  420  git status
+  421  git push origin master
+  422  cd ..
+  423  ls
+  424  git push origin master
+  425  ls
+  426  Control_Flow_Homework
+  427  git push origin master
+  428  git status
+  429  git add .
+  430  git commit -m "Control_Flow_Broken"
+  431  git push origin master
+  432  node.arrays js
+  433  code main.js
+  434  node main.js
+  435  node control_flow.js
+  436  git add .
+  437  git commit -m "Complete prompt 11"
+  438  git push origin master
+  439  git add .
+  440  git commit -m "Complete prompt 11"
+  441  git push origin master
+  442  git add .
+  443  git add commit -m "Complete prompt 13"
+  444  git add .
+  445  git commit -m "Complete prompt 13"
+  446  gh repo clone SEIR-0206/Control_Flow_Homework-3
+  447  git add .
+  448  git rm --cached Control_Flow_Homework-Feb10/10
+  449  git status
+  450  git add .
+  451  git commit "Prompt 13 complete"
+  452  git commit -m "Prompt 13 complete"
+  453  git push origin master
+  454  git add .
+  455  git push origin master
+  456  git rm --cached Control_Flow_Homework-Feb10/10
+  457  git rm --cached Control_Flow_Homework-2/10
+  458  git status
+  459  git add .
+  460  git status
+  461  git add .
+  462  git rm --cached Control_Flow_Homework-2/10
+  463  git add .
+  464  git commit -m "Complete prompt 13"
+  465  git push origin master
+  466  ls
+  467  cd Control_Flow_Homework-2
+  468  git add .
+  469  git commit -m "Prompt 13 complete"
+  470  git push origin master
+  471  git
+  472  git status
+  473  ls
+  474  cd ..
+  475  ls
+  476  cd Control_Flow_Homework-4
+  477  git status
+  478  git add .
+  479  git commit -m "Prompt 13 completee"
+  480  git push origin master
+  481  git status
+  482  ls
+  483  git add .
+  484  git cd .
+  485  cd .
+  486  git push origin master
+  487  git  add .
+  488  git status
+  489  git commit -m "Complete prompt 13"
+  490  git push origin master
+  491  ls
+  492  node.js
+  493  ls
+  494  nodemon
+  495  main.js
+  496  js
+  497  node
+  498  git add .
+  499  git commit -m "Commit 1 - Verbal questions"
+  500  git add .
+  501  git commit -m "Commit 2 - Cube Calculation"
+  502  git add .
+  503  git commitd -m "Commit 3 - Is a vowel"
+  504  git add /
+  505  git add .
+  506  git commit -m "Commit 3 - Is a vowel"
+  507  git add .
+  508  git commit -m "Commit 4 - Two Lenths"
+  509  git add .
+  510  git commit -m "Commit 5 - Sum Array"
+  511  git add .
+  512  git commit -m "Commit 6 - Prime Numbers"
+  513  git add .
+  514  git commit -m "Commit 7 - Longest Word"
+  515  git push origin master
+  516  git push origin main
+  517  git status
+➜  functions_scope_hw git:(main) ✗ 
