@@ -23,13 +23,20 @@ function isAVowel(letter){
     return vowels.includes(letter.toLowerCase());
     
 }
-console.log(isAVowel("A")); //Prints true if letter is capital or lowercase vowels. 
+console.log(isAVowel("A")); //Prints true if letter is capital or lowercase & is a vowel. 
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
-    
+    let lengths = [];
+    let wordLength1 = word1.toString().length;
+    let wordLength2 = word2.toString().length;
+
+    lengths.push(wordLength1, wordLength2);
+    return lengths;
+
 }
 
+console.log(getTwoLengths("one hundred", "five")); //prints out [11, 4]
 // 5. sumArray
 function sumArray(arr) {
     
