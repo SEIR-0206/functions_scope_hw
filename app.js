@@ -18,8 +18,12 @@ console.log(calculateCube(3));
 
 // 3. isAVowel
 function isAVowel(letter){
+    // letter = letter.toLowerCase();
+    vowels = ["a", "e", "i", "o", "u"];
+    return vowels.includes(letter.toLowerCase());
     
 }
+console.log(isAVowel("A")); //Prints true if letter is capital or lowercase vowels. 
 
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
