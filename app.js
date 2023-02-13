@@ -28,29 +28,62 @@ console.log(isAVowel("A")); //Prints true if letter is capital or lowercase & is
 // 4. getTwoLengths
 function getTwoLengths(word1, word2) {
     let lengths = [];
-    let wordLength1 = word1.toString().length;
+    let wordLength1 = word1.toString().length; //converts to string to get its length
     let wordLength2 = word2.toString().length;
 
-    lengths.push(wordLength1, wordLength2);
+    lengths.push(wordLength1, wordLength2); //pushes it into an array
     return lengths;
 
 }
-
 console.log(getTwoLengths("one hundred", "five")); //prints out [11, 4]
+
 // 5. sumArray
 function sumArray(arr) {
-    
+    let sum = arr[0] + arr[1];
+    console.log(arr);
 }
-
+sumArray(6,4)
 // 6.1 checkPrime
 function checkPrime(num) {
+    if (num <= 1) {
+        return false;
+      }
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+          return false; //False if number can be divisible by i evenly
+        }
+      }
+      return true; //true if cannot be divided.
+    }
+    // let squareRoot = num / num;
+    // squareRoot.lower;
+    // for(i = 2; i < squareRoot; i++){
+    //     if(squareRoot % 2 === 0){
+    //     return false;
+    //     }
+    //     return true;
+    // }
     
-}
+console.log("Is it Prime? " ,checkPrime(11)); //Needed to get ChatGPT aid. I get the way we would check it in real life stepwise. I don't know how to translate over without googling.
 
 // 6.2 printPrimes
 function printPrimes(num) {
-    
+    // primes = [];
+    if(checkPrime(num) === true){
+        console.log("This is a Prime Number");
+    } else {
+        for(i = 1; i <= num; i++){
+            if(num % i === 0){
+                // console.log(primes.push(num)); //Print prime numbers into array primes
+                console.log(i); 
+            }
+        }
+
+    }
 }
+  
+
+printPrimes(10);
 
 // 7. printLongestWord
 function printLongestWord(arr) {

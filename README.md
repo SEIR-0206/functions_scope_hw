@@ -101,7 +101,7 @@ A Prime number is a number that is not evenly divisible by another number except
 To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers.
 
 ### Step One
-Write a function called `checkPrime` that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not.
+Write a function called `checkPrime` that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if true.
 _Hint:_ Check every number up to the square root. To do this, try a _for loop_.
 
 ### Step Two
